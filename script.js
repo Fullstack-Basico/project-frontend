@@ -19,7 +19,7 @@ let book = {
 console.log(book);
 
 
-let url = "http://localhost:8000/api/book";
+let url = "http://127.0.0.1:8000/api/book";
 let params = {
     method: "POST",
     headers:{
@@ -36,9 +36,7 @@ fetch(url,params).then((response) =>{
     if(response.status == 201){
         alert("Creación Exitosa Libro !!");
     }else{
-
         alert("Error en la creación de Libro !!");
-
     }
 });
 
